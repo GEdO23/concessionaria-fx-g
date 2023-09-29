@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="708.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="708.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
   <tabs>
     <Tab text="Veículos">
          <content>
@@ -31,33 +31,33 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtMarca" />
+                        <TextField />
                         <Label layoutX="20.0" layoutY="50.0" text="Modelo">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtModelo" layoutX="20.0" layoutY="70.0" />
+                        <TextField layoutX="20.0" layoutY="70.0" />
                         <Label layoutX="20.0" layoutY="95.0" text="Ano">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtAno" layoutX="20.0" layoutY="115.0" />
+                        <TextField layoutX="20.0" layoutY="115.0" />
                         <Label layoutX="20.0" layoutY="140.0" text="Valor">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtValor" layoutX="20.0" layoutY="160.0" />
+                        <TextField layoutX="20.0" layoutY="160.0" />
                         <Label layoutX="20.0" layoutY="255.0" text="Cliente">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="cboCliente" prefHeight="25.0" prefWidth="187.0" />
-                        <Button mnemonicParsing="false" onAction="#cadastrarVeiculo" prefHeight="33.0" prefWidth="183.0" text="cadastrar" />
-                        <Button layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#apagarVeiculo" prefHeight="33.0" prefWidth="183.0" text="apagar" />
+                        <ComboBox prefHeight="25.0" prefWidth="187.0" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="cadastrar" />
+                        <Button layoutX="20.0" layoutY="320.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="apagar" />
                      </children>
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -65,14 +65,13 @@
                   </VBox>
                </left>
                <center>
-                  <TableView fx:id="tabelaVeiculo" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <columns>
-                        <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
-                      <TableColumn fx:id="colMarca" prefWidth="75.0" text="Marca" />
-                      <TableColumn fx:id="colModelo" prefWidth="75.0" text="Modelo" />
-                        <TableColumn fx:id="colAno" prefWidth="75.0" text="Ano" />
-                        <TableColumn fx:id="colValor" prefWidth="75.0" text="Valor" />
-                        <TableColumn fx:id="colCliente" prefWidth="75.0" text="Cliente" />
+                        <TableColumn prefWidth="75.0" text="ID" />
+                      <TableColumn prefWidth="75.0" text="Marca" />
+                      <TableColumn prefWidth="75.0" text="Modelo" />
+                        <TableColumn prefWidth="75.0" text="Ano" />
+                        <TableColumn prefWidth="75.0" text="Cliente" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -97,20 +96,20 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtNome" />
+                        <TextField />
                         <Label layoutX="20.0" layoutY="50.0" text="Email">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtEmail" layoutX="20.0" layoutY="70.0" />
+                        <TextField layoutX="20.0" layoutY="70.0" />
                         <Label layoutX="20.0" layoutY="95.0" text="Telefone">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="txtTelefone" layoutX="20.0" layoutY="115.0" />
-                        <Button mnemonicParsing="false" onAction="#cadastrarCliente" prefHeight="33.0" prefWidth="183.0" text="cadastrar" />
+                        <TextField layoutX="20.0" layoutY="115.0" />
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="cadastrar" />
                         <Button layoutX="20.0" layoutY="320.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="apagar" />
                      </children>
                      <padding>
@@ -119,12 +118,12 @@
                   </VBox>
                </left>
                <center>
-                  <TableView fx:id="tabelaCliente" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <columns>
-                        <TableColumn fx:id="colIdCliente" prefWidth="75.0" text="ID" />
-                        <TableColumn fx:id="colNome" prefWidth="75.0" text="Nome" />
-                        <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
-                        <TableColumn fx:id="colTelefone" prefWidth="75.0" text="Telefone" />
+                        <TableColumn prefWidth="75.0" text="ID" />
+                        <TableColumn prefWidth="75.0" text="Nome" />
+                        <TableColumn prefWidth="75.0" text="Email" />
+                        <TableColumn prefWidth="75.0" text="Telefone" />
                      </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

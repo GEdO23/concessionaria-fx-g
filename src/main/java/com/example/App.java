@@ -9,9 +9,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * JavaFX App
- */
+//* JavaFX App
+/*
+* 04 - CONTATOS
+
+* - Crie duas tabelas: uma para contatos e outra para grupos;
+    
+TODO: - Estabeleça um relacionamento onde cada contato pode pertencer a vários grupos;
+    
+TODO: - Implemente operações CRUD para contatos e grupos;
+    
+TODO: - Permita que os usuários adicionem contatos aos grupos;
+    
+TODO: - Permita que os usuários vejam os contatos pertencentes a um grupo específico.
+*/
+
 public class App extends Application {
 
     private static Scene scene;

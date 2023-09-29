@@ -1,70 +1,91 @@
 package com.example;
 
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
 
-import com.example.data.ClienteDao;
-import com.example.data.VeiculoDao;
-import com.example.model.Cliente;
-import com.example.model.Veiculo;
+//* Importando objetos java
+// import java.net.URL; 
+// import java.sql.SQLException;
 
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.util.converter.BigDecimalStringConverter;
-import javafx.util.converter.IntegerStringConverter;
-
-public class PrimaryController implements Initializable {
-
-    // Campos dos Veículos
-    @FXML
-    TextField txtMarca;
-    @FXML
-    TextField txtModelo;
-    @FXML
-    TextField txtAno;
-    @FXML
-    TextField txtValor;
-    @FXML
-    TableView<Veiculo> tabelaVeiculo;
-    @FXML
-    TableColumn<Veiculo, Integer> colId;
-    @FXML
-    TableColumn<Veiculo, String> colMarca;
-    @FXML
-    TableColumn<Veiculo, String> colModelo;
-    @FXML
-    TableColumn<Veiculo, Integer> colAno;
-    @FXML
-    TableColumn<Veiculo, BigDecimal> colValor;
-    @FXML TableColumn<Cliente, String> colCliente;
-    @FXML ComboBox<Cliente> cboCliente;
+// import java.math.BigDecimal; //?
+// import java.util.ResourceBundle; //?
 
 
-    //campos do cliente
-    @FXML TextField txtNome;
-    @FXML TextField txtEmail;
-    @FXML TextField txtTelefone;
-    @FXML TableView<Cliente> tabelaCliente;
-    @FXML TableColumn<Cliente, Integer> colIdCliente;
-    @FXML TableColumn<Cliente, String> colNome;
-    @FXML TableColumn<Cliente, String> colEmail;
-    @FXML TableColumn<Cliente, String> colTelefone;
+//* Importando objetos data e objetos model internos
+// import com.example.data.ClienteDao;
+// import com.example.data.VeiculoDao;
 
-    VeiculoDao veiculoDao = new VeiculoDao();
-    ClienteDao clienteDao = new ClienteDao();
+// import com.example.model.Cliente;
+// import com.example.model.Veiculo;
 
-    // métodos do veículo
+
+//* Importando objetos javafx
+// import javafx.fxml.FXML;
+
+// import javafx.scene.control.Alert;
+// import javafx.scene.control.Alert.AlertType;
+
+// import javafx.scene.control.TableColumn;
+// import javafx.scene.control.TableView;
+
+// import javafx.scene.control.TextField;
+
+// import javafx.fxml.Initializable; //?
+
+// import javafx.scene.control.ButtonBar.ButtonData; //?
+// import javafx.scene.control.ComboBox; //?
+
+// import javafx.scene.control.cell.PropertyValueFactory; //?
+// import javafx.scene.control.cell.TextFieldTableCell; //?
+
+// import javafx.util.converter.BigDecimalStringConverter; //?
+// import javafx.util.converter.IntegerStringConverter; //?
+
+
+public class PrimaryController {
+    //? implements Initializable 
+    
+    //TODO: campos dos veiculos
+    // @FXML
+    // TextField txtMarca;
+    // @FXML
+    // TextField txtModelo;
+    // @FXML
+    // TextField txtAno;
+    // @FXML
+    // TextField txtValor;
+    // @FXML
+    // TableView<Veiculo> tabelaVeiculo;
+    // @FXML
+    // TableColumn<Veiculo, Integer> colId;
+    // @FXML
+    // TableColumn<Veiculo, String> colMarca;
+    // @FXML
+    // TableColumn<Veiculo, String> colModelo;
+    // @FXML
+    // TableColumn<Veiculo, Integer> colAno;
+    // @FXML
+    // TableColumn<Veiculo, BigDecimal> colValor;
+    // @FXML TableColumn<Cliente, String> colCliente;
+    // @FXML ComboBox<Cliente> cboCliente;
+
+
+    //TODO: campos do cliente
+    // @FXML TextField txtNome;
+    // @FXML TextField txtEmail;
+    // @FXML TextField txtTelefone;
+    // @FXML TableView<Cliente> tabelaCliente;
+    // @FXML TableColumn<Cliente, Integer> colIdCliente;
+    // @FXML TableColumn<Cliente, String> colNome;
+    // @FXML TableColumn<Cliente, String> colEmail;
+    // @FXML TableColumn<Cliente, String> colTelefone;
+
+
+    //TODO: Criando objetos para acessar os dados
+    // VeiculoDao veiculoDao = new VeiculoDao();
+    // ClienteDao clienteDao = new ClienteDao();
+
+
+    //TODO: métodos do veículo
+    /* 
     public void cadastrarVeiculo() {
         var veiculo = new Veiculo(
                 txtMarca.getText(),
@@ -135,9 +156,11 @@ public class PrimaryController implements Initializable {
             e.printStackTrace();
         }
     }
+    */
 
 
-    //métodos do cliente
+    //TODO: métodos do cliente
+    /* 
     public void cadastrarCliente() {
         var cliente = new Cliente(
                 txtNome.getText(),
@@ -162,7 +185,11 @@ public class PrimaryController implements Initializable {
             mostrarMensagem("Erro", "Erro ao buscar clientes. " + e.getMessage());
         }
     }
+    */
 
+
+   //TODO: Overrides
+   /* 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -201,5 +228,6 @@ public class PrimaryController implements Initializable {
         consultarVeiculos();
         consultarClientes();
     }
+   */
 
 }
